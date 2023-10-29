@@ -4,160 +4,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no"">
+        <meta name="viewport" content="width=device-width">
 	<meta name="robots" content="noindex">
 
     <style>
-  /* Style anchor elements within h3 tags */
-    h3 a {
-        text-decoration: none;
-        color: inherit; /* Use the parent's color (h3 color) */
-    }
-
-#proceedBtn {
-            Width: 180px;
-height: 40px;
-Margin-left: 2px;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .terms {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-            max-height: 500px; /* Set a fixed max-height for the initial display */
-            overflow: auto; /* Add scrollbar when content overflows the box */
-            color: #fff;
-        }
-        .terms-checkbox {
-            margin-bottom: 10px;
-        }
-        iframe {
-            width: 100%;
-            height: 750px;
-            border: none;
-        }
 
 
 
-.header {
-  font-family: system-ui;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-background: #1a1a1a;
-}
-
-.header .logo {
-  display: flex;
-  align-items: center;
-}
-
-.header .logo img {
-  width: 40px;
-  height: 40px;
-opacity: 0.84;
-}
-
-.header .logo-text {
-  margin-left: 10px;
-  font-size: 20px;
-color: #444444;
-  font-weight: 600;
-}
-
-.header .navigation {
-  display: right;
-  align-items: center;
-      word-spacing: 1.3em; /* Adjust the spacing as needed */	
-
-}
-
-.header .button {
-  margin: 0 10px;
-  padding: 0px 20px;
-  color: #DADADA;
-  text-decoration: none;
-  border-radius: 0px;
-font-size: 18px;
-}
-
-header a {
-      color: #DADADA;
-      text-decoration: none;
-
-    }
-
-.header .twitter-link svg {
-  width: 25px;
-  height: 24px;
-  fill: #444444;
-}
-
-.footer {
-  font-family: system-ui;
-  background: #F2F2F2;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.footer .logo {
-  display: flex;
-  justify-content: center;
-}
-
-.footer .description {
-  font-size: 20px;
-  margin-bottom: 0px;
-color: black;
-}
-
-.footer .info {
-  font-size: 16px;
-  opacity: 0.8;
-}
-
-.footer .divider {
-  border: none;
-  border-bottom: 1px solid #fff;
-  margin: 25px 0;
-  opacity: 0.2;
-}
-
-.footer .sub-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer .sub-footer .terms,
-.footer .sub-footer .privacy,
-.footer .sub-footer .glossary {
-font-size: 17px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-}
 
 
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items at the top */
-  flex-wrap: wrap; /* Add flex-wrap property to wrap the content on smaller screens */
-}
+
 
 
 .description,
@@ -165,63 +22,88 @@ font-size: 17px;
 .divider,
 .sub-footer {
   flex-basis: 100%;
-color: black;
 }
 
 .footer p {
   margin-bottom: 0; /* Remove bottom margin from the paragraph elements */
 }
+	        
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
 
 
-h1 {
-color: #DADADA;
-margin-left: 8px;
-font-family:Arial, Helvetica, sans-serif;
-font-size: 29px        
-}
 
-h2 {
-font-size: 21px        
-}
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 30px;
+      font-family: Arial, sans-serif;
+    }
 
- .hidden {
-            display: none;
-        }
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .metric {
+      background-color: #F5F5F5;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .metric-title {
+      font-weight: bold;
+      margin-top: 5px;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .metric-definition {
+      margin: 0;
+    }
+
+
+.warning {
+      background-color: #FFD700;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+
+
 
     </style>
-    <script>
-        function toggleSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.classList.toggle("hidden");
 
-            // Update the button text to show '+' or '-'
-            const button = document.getElementById(`${sectionId}-button`);
-            button.innerText = section.classList.contains("hidden") ? "+" : "-";
-        }
-    </script>
 </head>
 <body>
    
 <br>
 
 
-<h1>
-    <span onclick="toggleSection('guide-section')">Guide <span id="guide-button">+</span></span>
-</h1>
-<div id="guide-section" class="terms hidden">
-    
-    <p>• 2x 15 queries a day (1x per chatbot)<br>
-• Top 5 leagues, minimum 300 minutes<br>
-• Username : Pro > Manage Account > "You are now logged in as [your username]<br>
-• Limited offer<br>
 
-    </p>
-
-
-
-    <h3><a href="http://datamb.football/glossary">Link to metrics glossary</a></h3>
+  <div class="warning">
+  <p>• <strong>Find your username :</strong> DataMB Pro > Manage account > "You are now logged in as [your username]"</p>
+  <p>• <strong>Beta :</strong> Free early access will only be offered for limited-time and does not represent the final product
+</p>
+    <p>• <strong>Query limit :</strong> 10 DataMB Chat successful queries and 10 DataMB Viz Chat successful queries per user per day</p>
+</p>
 </div>
-<br>
+
+  <div class="metric">
+   
+    <p class="metric-definition"><strong>• Dataset :</strong> 🇪🇺 Top 5 League players, minimum 300 minutes played</p><br>
+  <p class="metric-definition"><strong>• LLM :</strong> OpenAI GPT-3.5 (4096 tokens per query)</p><br>
+  <p class="metric-definition"><strong>• DataMB Chat :</strong> Conversational, designed for text answers ("Who is the best at...", "Tell me about...", "Rank...", etc.). Not designed to draw visuals.</p><br>
+  <p class="metric-definition"><strong>• DataMB Viz Chat : </strong>Designed to provide visual answers by plotting graphs and charts ("Plot...", "Bar graph...", "Pie chart...", etc.). Not designed to answer with text.</p><br>
+
+
+</div>
+
 
 
 </body>
