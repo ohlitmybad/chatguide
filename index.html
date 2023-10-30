@@ -12,7 +12,15 @@
 
 
 
-
+    img {
+            width: 51px;
+position: absolute;
+top: 954px;
+pointer: cursor;
+z-index: 40000; 
+left: 50%;
+opacity: .92;
+        }
 
 
 
@@ -107,11 +115,22 @@
   <p class="metric-definition">• The AI Agent can be quite delicate, and will often display errors if the prompt is not quite right or outside of his scope. Make sure the prompt is accurate and as precise as possible.</p><br>
 
 
-<p class="metric-definition">• Like the GPT model on which it was built, it can also output wrong information when it fails to find the right answer. We make no guarantees that it will always get everything right.</p><br>
+<p class="metric-definition">• Like the GPT model on which it was built, it can also output wrong information when it fails to find the right answer. We make no guarantees that the answers will always be correct.</p><br>
 
 <p class="metric-definition">• To look up players, we would advise to use first name initial + last name (eg : E. Haaland), except for Brazilian and Portuguese players (eg : Bernardo Silva).</p>
 
 </div>
 
+   <div class="metric">
+    <p class="metric-definition"><strong>• Metrics :</strong> To print the columns and view all the player metrics, type "df.columns" in DataMB Chat. Team and league information can also be queried; the AI will use player metrics</p><br>
+  <p class="metric-definition"><strong>• Confirmed operations :</strong> Comparison (players, teams, leagues...), Ranking (players, teams, leagues...), Sorting/Filtering, Addition/Subtraction, Multiplication/Division, Averages, Counting, Percentiles (not as consistently).</p><br>
+  <p class="metric-definition"><strong>• Confirmed graph types : </strong>Scatter plot, Horizontal bar chart, Vertical bar chart, Pie chart, 3D plot, Distribution histogram. Radar charts can sometimes be obtained but are more tricky, and no consistent prompt has been found yet. You can also specify modifications (comparisons, filters, colours, sizes...).</p><br>
+</div>
+<br><br><br><br><br><br>
+  
+  
+<a href="https://datamb.football">
+  <img src="https://i.imgur.com/UurMbGS.png" alt="Logo">
+</a>
 </body>
 </html>
